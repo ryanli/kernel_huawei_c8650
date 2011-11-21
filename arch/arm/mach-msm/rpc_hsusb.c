@@ -19,6 +19,7 @@
  */
 
 #include <linux/err.h>
+#include <mach/socinfo.h>
 #include <mach/rpc_hsusb.h>
 #include <asm/mach-types.h>
 
