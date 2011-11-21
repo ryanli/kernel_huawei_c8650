@@ -30,6 +30,9 @@
 #ifndef _ARCH_ARM_MACH_MSM_SOCINFO_H_
 #define _ARCH_ARM_MACH_MSM_SOCINFO_H_
 
+#include <linux/types.h>
+#include <linux/init.h>
+
 /*
  * SOC version type with major number in the upper 16 bits and minor
  * number in the lower 16 bits.  For example:
