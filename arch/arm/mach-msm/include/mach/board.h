@@ -102,13 +102,12 @@ struct msm_camera_legacy_device_platform_data {
 
 #define MSM_CAMERA_FLASH_NONE 0
 #define MSM_CAMERA_FLASH_LED  1
-#ifdef CONFIG_HUAWEI_CAMERA
+
 struct msm_camera_sensor_vreg {
 	const char *vreg_name;
 	unsigned int mv;
     uint8_t always_on;
 };
-#endif //CONFIG_HUAWEI_CAMERA
 
 #define MSM_CAMERA_FLASH_SRC_PMIC (0x00000001<<0)
 #define MSM_CAMERA_FLASH_SRC_PWM  (0x00000001<<1)
