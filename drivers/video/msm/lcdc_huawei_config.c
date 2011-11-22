@@ -151,13 +151,11 @@ int process_lcdc_table(struct sequence *table, size_t count, lcd_panel_type lcd_
 				/* 9 bit SPI to write the command and data */
         		seriout_byte_9bit(start_byte, (uint8)reg);
 				break;
+
+			// Ignore MDDI displays
 			case LCD_MDDI_NT35582_BYD_WVGA:
 			case LCD_MDDI_NT35582_TRULY_WVGA:
 			case LCD_MDDI_NT35510_ALPHA_SI_WVGA:
-				/* MDDI port to write the reg and value */
-				ret = mddi_queue_register_write(reg,value,TRUE,0);
-				break;
-		
 			default:
 				break;
 		}		
